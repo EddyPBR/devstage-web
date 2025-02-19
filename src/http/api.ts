@@ -57,7 +57,7 @@ export type GetSubscriberRankingPosition200 = {
 export const getSubscribeToEventUrl = () => {
 
 
-  return `${process.env.API_URL}/subscriptions`
+  return `${process.env.NEXT_PUBLIC_API_URL}/subscriptions`
 }
 
 export const subscribeToEvent = async (subscribeToEventBody: SubscribeToEventBody, options?: RequestInit): Promise<SubscribeToEvent201> => {
@@ -86,7 +86,7 @@ export const subscribeToEvent = async (subscribeToEventBody: SubscribeToEventBod
 export const getAccessInviteLinkUrl = (subscriberId: string,) => {
 
 
-  return `${process.env.API_URL}/invites/${subscriberId}`
+  return `${process.env.NEXT_PUBLIC_API_URL}/invites/${subscriberId}`
 }
 
 export const accessInviteLink = async (subscriberId: string, options?: RequestInit): Promise<unknown> => {
@@ -114,7 +114,7 @@ export const accessInviteLink = async (subscriberId: string, options?: RequestIn
 export const getGetRankingUrl = () => {
 
 
-  return `${process.env.API_URL}/ranking`
+  return `${process.env.NEXT_PUBLIC_API_URL}/ranking`
 }
 
 export const getRanking = async ( options?: RequestInit): Promise<GetRanking200> => {
@@ -142,7 +142,7 @@ export const getRanking = async ( options?: RequestInit): Promise<GetRanking200>
 export const getGetSubscriberInviteCountUrl = (subscriberId: string,) => {
 
 
-  return `${process.env.API_URL}/subscribers/${subscriberId}/ranking/count`
+  return `${process.env.NEXT_PUBLIC_API_URL}/subscribers/${subscriberId}/ranking/count`
 }
 
 export const getSubscriberInviteCount = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberInviteCount200> => {
@@ -170,7 +170,7 @@ export const getSubscriberInviteCount = async (subscriberId: string, options?: R
 export const getGetSubscriberInviteClicksUrl = (subscriberId: string,) => {
 
 
-  return `${process.env.API_URL}/subscribers/${subscriberId}/ranking/clicks`
+  return `${process.env.NEXT_PUBLIC_API_URL}/subscribers/${subscriberId}/ranking/clicks`
 }
 
 export const getSubscriberInviteClicks = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberInviteClicks200> => {
@@ -198,7 +198,7 @@ export const getSubscriberInviteClicks = async (subscriberId: string, options?: 
 export const getGetSubscriberRankingPositionUrl = (subscriberId: string,) => {
 
 
-  return `${process.env.API_URL}/subscribers/${subscriberId}/ranking/position`
+  return `${process.env.NEXT_PUBLIC_API_URL}/subscribers/${subscriberId}/ranking/position`
 }
 
 export const getSubscriberRankingPosition = async (subscriberId: string, options?: RequestInit): Promise<GetSubscriberRankingPosition200> => {
