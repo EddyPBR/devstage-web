@@ -1,6 +1,7 @@
 # 🚀 devstage-web
 
-![DevStage](https://media.giphy.com/media/QTfX9Ejfra3ZmNxh6B/giphy.gif)
+![DevStage](https://github.com/user-attachments/assets/d1f7526f-7a23-4ab1-ad8f-230bfcb5b5b5)
+
 
 ## 📌 Sobre o Projeto
 
@@ -43,7 +44,12 @@ NEXT_PUBLIC_API_URL=http://localhost:3333
 
 > Substitua a URL da API caso esteja rodando em outro endereço.
 
-### 🚀 4. Rode o Projeto
+### 🔄 4. Gere as API Requests com Orval (OPCIONAL)
+```bash
+npm run generate:api
+```
+
+### 🚀 5. Rode o Projeto
 
 ```bash
 npm run dev
