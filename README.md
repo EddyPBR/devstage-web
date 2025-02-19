@@ -36,13 +36,13 @@ npm install
 
 ### ⚙️ 3. Configure as Variáveis de Ambiente
 
-Crie um arquivo `.env.development` na raiz do projeto e adicione:
+Por padrão o projeto utiliza o `.env.development` localizado na raiz do projeto:
 
 ```bash
 NEXT_PUBLIC_API_URL=http://localhost:3333
 ```
 
-> Substitua a URL da API caso esteja rodando em outro endereço.
+> Substitua as variaveis caso necessário.
 
 ### 🔄 4. Gere as API Requests com Orval (OPCIONAL)
 ```bash
